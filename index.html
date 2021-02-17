@@ -36,10 +36,12 @@
   <div class="main">
     <div class="main_title">
       <h1>prefers-reduced-motion</h1>
-      <p class="main_title_subheader">an important, but often overlooked, media type</p>  
+      <p class="main_title_subheader">an important, but often overlooked, media type</p>
+      <p>Write all CSS rules that should be applied to users requesting reduced motion content in a media query selecting the <code>prefers-reduced-motion</code> media type.</p>
     </div>
     <div class="main_example">
-      <h2>Generic Override Example</h2>
+      <h2>Generic Animation Override Example</h2>
+      <p>This snippet of CSS completely prevents most animations from happening on a webpage for users with <em>reduced motion</em> settings enabled. For all other users, it will still move.</p>
       <pre>
 @media (prefers-reduced-motion) {
   * {
@@ -48,33 +50,29 @@
   }
 }</pre>
       <p>
-        NOTE: It may be wise to include this at the bottom of your body so that it overrides css which comes before it in the document.
+        This snippet currently exists in the head of of this page. If you have enabled <em>reduced motion</em> settings on your machine, the header "Generic Animation Override Example" will not move. Additionally, the dark mode toggle at the top left of the page will also not slide, but snap into place as it is toggled.
       </p>
     </div>
     <div class="main_card">
-      <h2>Usage</h2>
-      <p>Write all CSS rules that should be applied to users requesting reduced motion content in a media query selecting the <code>prefers-reduced-motion</code> media type.</p>
-      <p>To request usage of reduced motion media, take the appropriate actions as follows for the device being used:</p>
+      <h2>Enabling <em>Reduced Motion</em></h2>
+      <p>To request usage of <em>reduced motion</em> media on your machine, take the appropriate actions as follows for the device being used:</p>
       <ul>
-        <li>In GTK/GNOME: GNOME Tweaks &gt; General tab (or Appearance, depending on version) &gt; Animations is turned off.
-        <ul>
-          <li>Alternatively, add <code>gtk-enable-animations = false</code> to the <code>[Settings]</code> block of <a href="https://wiki.archlinux.org/index.php/GTK#Configuration" class="external" rel=" noopener">the GTK 3 configuration file</a>.</li>
-        </ul>
+        <li>Windows 10: Settings &gt; Ease of Access &gt; Display &gt; Show animations in Windows.</li>
+        <li>Windows 7: Control Panel &gt; Ease of Access &gt; Make the computer easier to see &gt; Turn off all unnecessary animations (when possible).</li>
+        <li>macOS: System Preferences &gt; Accessibility &gt; Display &gt; Reduce motion.</li>
+        <li>iOS: Settings &gt; General &gt; Accessibility &gt; Reduce Motion.</li>
+        <li>Android 9+: Settings &gt; Accessibility &gt; Remove animations.</li>
+        <li>GTK/GNOME: GNOME Tweaks &gt; General tab (or Appearance, depending on version) &gt; Animations is turned off.
+          <ul>
+            <li>Alternatively, add <code>gtk-enable-animations = false</code> to the <code>[Settings]</code> block of <a href="https://wiki.archlinux.org/index.php/GTK#Configuration" class="external" rel=" noopener">the GTK 3 configuration file</a>.</li>
+          </ul>
         </li>
-        <li>In Plasma/KDE: System Settings &gt; Workspace Behavior -&gt; General Behavior &gt; “Animation speed” is set all the way to right to “Instant”.</li>
-        <li>In Windows 10: Settings &gt; Ease of Access &gt; Display &gt; Show animations in Windows.</li>
-        <li>In Windows 7: Control Panel &gt; Ease of Access &gt; Make the computer easier to see &gt; Turn off all unnecessary animations (when possible).</li>
-        <li>In macOS: System Preferences &gt; Accessibility &gt; Display &gt; Reduce motion.</li>
-        <li>In iOS: Settings &gt; General &gt; Accessibility &gt; Reduce Motion.</li>
-        <li>In Android 9+: Settings &gt; Accessibility &gt; Remove animations.</li>
-        <li>In Firefox <code>about:config</code>: Add a number preference called <code>ui.prefersReducedMotion</code> and set its value to <code>1</code>. Changes to this preference take effect immediately.</li>
       </ul>
     </div>
-    <div class="main_card">
-      <h2>Browser Support</h2>
-      <p>Coming Soon...</p>
-    </div>
     <footer>
+      <h2>Site Info</h2>
+      <a href="https://github.com/SydBal/prefers-reduced-motion.com">Source Code</a>
+      <a href="https://dominic.balass.one/">Dominic Balassone</a>
       <h2>Sources</h2>
       <cite><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">MDN prefer-reduced-motion Docs</a></cite>
       <cite><a href="https://adrianroselli.com/2019/08/under-engineered-toggles-too.html">Guide to Awesome Button Toggles</a></cite>

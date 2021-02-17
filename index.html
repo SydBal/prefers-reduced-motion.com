@@ -2,7 +2,8 @@
   <!-- UTF-8 Enables Emojis (among other things) -->
   <meta charset="UTF-8">
   <!-- Mobile hi-res breakpoints, no horizontal scroll @ https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag#viewport_width_and_screen_width -->
-  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">  <title>prefers-reduced-motion.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, minimum-scale=1">
+  <title>prefers-reduced-motion.com</title>
   <style>
     /*
       It may be wise to include this at the bottom of your body so that
@@ -35,9 +36,9 @@
   <button type="button" id="darkmode-toggle" aria-label="Dark Mode Toggle" aria-pressed="false" onclick="toggleDarkmode();"></button>
   <div class="main">
     <div class="main_title">
-      <h1>prefers-reduced-motion</h1>
-      <p class="main_title_subheader">an important, but often overlooked, media type</p>
-      <p>Write all CSS rules that should be applied to users requesting reduced motion content in a media query selecting the <code>prefers-reduced-motion</code> media type.</p>
+      <h1><code>prefers-reduced-motion</code></h1>
+      <p class="main_title_subheader">an important, but often overlooked, CSS media type</p>
+      <p>Write all CSS rules that should be applied to users requesting <em>reduced motion</em> content in a media query selecting the <code>prefers-reduced-motion</code> media type.</p>
     </div>
     <div class="main_example">
       <h2>Generic Animation Override Example</h2>
@@ -62,20 +63,15 @@
         <li>macOS: System Preferences &gt; Accessibility &gt; Display &gt; Reduce motion.</li>
         <li>iOS: Settings &gt; General &gt; Accessibility &gt; Reduce Motion.</li>
         <li>Android 9+: Settings &gt; Accessibility &gt; Remove animations.</li>
-        <li>GTK/GNOME: GNOME Tweaks &gt; General tab (or Appearance, depending on version) &gt; Animations is turned off.
-          <ul>
-            <li>Alternatively, add <code>gtk-enable-animations = false</code> to the <code>[Settings]</code> block of <a href="https://wiki.archlinux.org/index.php/GTK#Configuration" class="external" rel=" noopener">the GTK 3 configuration file</a>.</li>
-          </ul>
-        </li>
       </ul>
     </div>
     <footer>
-      <h2>Site Info</h2>
-      <a href="https://github.com/SydBal/prefers-reduced-motion.com">Source Code</a>
-      <a href="https://dominic.balass.one/">Dominic Balassone</a>
       <h2>Sources</h2>
       <cite><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">MDN prefer-reduced-motion Docs</a></cite>
       <cite><a href="https://adrianroselli.com/2019/08/under-engineered-toggles-too.html">Guide to Awesome Button Toggles</a></cite>
+      <h2>Site Info</h2>
+      <a href="https://github.com/SydBal/prefers-reduced-motion.com">Source Code</a>
+      <a href="https://dominic.balass.one/">Dominic Balassone</a>
     </div>
   <script src="./index.js"></script>
 </body>

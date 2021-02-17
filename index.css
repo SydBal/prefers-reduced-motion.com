@@ -2,12 +2,14 @@
 body {
   --text-main: black;
   --background-main: white;
+  --background-main-gradient: linear-gradient(315deg, white 0%, white 90%, rgb(141, 158, 255) 100%);
 }
 
 /* Darkmode */
 body.darkmode {
   --text-main: white;
-  --background-main: black;
+  --background-main: rgb(2,0,36);
+  --background-main-gradient: linear-gradient(315deg, black 0%, black 90%, rgba(60,0,100,1) 100%);
 }
 
 #darkmode-toggle {
@@ -19,6 +21,7 @@ body.darkmode {
 body {
   color: var(--text-main);
   background: var(--background-main);
+  background: var(--background-main-gradient);
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -36,6 +39,15 @@ body {
   text-align: left;
   display: inline-block;
   margin: 0 auto;
+}
+
+.main ul {
+  text-align: left;
+}
+
+footer cite {
+  display: block;
+  padding-bottom: 10px;
 }
 
 /* Nice Toggle Styles via: https://adrianroselli.com/2019/08/under-engineered-toggles-too.html */

@@ -24,6 +24,7 @@
   <style>
     #darkmode-toggle {
       display: block !important;
+      position: absolute;
     }
   </style>
   <!-- <![endif]-->
@@ -49,6 +50,33 @@
         NOTE: It may be wise to include this at the bottom of your body so that it overrides css which comes before it in the document.
       </p>
     </div>
-  </div>
+    <div class="main_card">
+      <h2>Usage</h2>
+      <p>Write all CSS rules that should be applied to users requesting reduced motion content in a media query selecting the <code>prefers-reduced-motion</code> media type.</p>
+      <p>To request usage of reduced motion media, take the appropriate actions as follows for the device being used:</p>
+      <ul>
+        <li>In GTK/GNOME: GNOME Tweaks &gt; General tab (or Appearance, depending on version) &gt; Animations is turned off.
+        <ul>
+          <li>Alternatively, add <code>gtk-enable-animations = false</code> to the <code>[Settings]</code> block of <a href="https://wiki.archlinux.org/index.php/GTK#Configuration" class="external" rel=" noopener">the GTK 3 configuration file</a>.</li>
+        </ul>
+        </li>
+        <li>In Plasma/KDE: System Settings &gt; Workspace Behavior -&gt; General Behavior &gt; “Animation speed” is set all the way to right to “Instant”.</li>
+        <li>In Windows 10: Settings &gt; Ease of Access &gt; Display &gt; Show animations in Windows.</li>
+        <li>In Windows 7: Control Panel &gt; Ease of Access &gt; Make the computer easier to see &gt; Turn off all unnecessary animations (when possible).</li>
+        <li>In macOS: System Preferences &gt; Accessibility &gt; Display &gt; Reduce motion.</li>
+        <li>In iOS: Settings &gt; General &gt; Accessibility &gt; Reduce Motion.</li>
+        <li>In Android 9+: Settings &gt; Accessibility &gt; Remove animations.</li>
+        <li>In Firefox <code>about:config</code>: Add a number preference called <code>ui.prefersReducedMotion</code> and set its value to <code>1</code>. Changes to this preference take effect immediately.</li>
+      </ul>
+    </div>
+    <div class="main_card">
+      <h2>Browser Support</h2>
+      <p>Coming Soon...</p>
+    </div>
+    <footer>
+      <h2>Sources</h2>
+      <cite><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">MDN prefer-reduced-motion Docs</a></cite>
+      <cite><a href="https://adrianroselli.com/2019/08/under-engineered-toggles-too.html">Guide to Awesome Button Toggles</a></cite>
+    </div>
   <script src="./index.js"></script>
 </body>

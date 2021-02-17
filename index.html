@@ -1,0 +1,19 @@
+<head>
+  <title>prefers-reduced-motion.com</title>
+  <style>
+    /*
+      It may be wise to include this at the bottom of your body so that
+      it overrides css which comes before it in the document.
+    */
+    @media (prefers-reduced-motion) {
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello World</h1>
+  <p>Content here...</p>
+</body>

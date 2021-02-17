@@ -35,6 +35,10 @@ body {
   justify-content: center;
 }
 
+.main_title {
+  margin-top: 1.25em;
+}
+
 .main pre {
   text-align: left;
   display: inline-block;
@@ -76,7 +80,7 @@ footer cite {
 
 [aria-pressed]:focus::before,
 [aria-pressed]:hover::before {
-  box-shadow: 0 0 0.5em #333;
+  box-shadow: 0 0 0.5em yellow;
 }
 
 [aria-pressed]:focus::after,
@@ -100,14 +104,14 @@ footer cite {
   top: 0.2em;
   width: 3em;
   border: 0.2em solid #767676;
-  background: #767676;
+  background: rgb(159, 174, 255);
   border-radius: 1.1em;
 }
 
 [aria-pressed]::after {
   left: 0;
   top: 0.25em;
-  background-color: #fff;
+  background-color: yellow;
   background-position: center center;
   border-radius: 50%;
   width: 1.5em;
@@ -116,13 +120,18 @@ footer cite {
 
 [aria-pressed=true]::after {
   left: 1.6em;
-  border-color: #36a829;
-  color: #36a829;
+  /* border-color: #36a829;
+  color: #36a829; */
+  border-color: rgb(255, 250, 206);
+  color: rgb(255, 250, 206);
+  
+  background-color: rgb(255, 250, 206);
 }
 
 [aria-pressed=true]::before {
-  background-color: #36a829;
-  border-color: #36a829;
+  background-color: black;
+  border-color: black;  box-shadow: 0 0 0.5em white;
+
 }
 
 [aria-pressed][disabled]::before {

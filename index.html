@@ -12,8 +12,26 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <h1>Hello World</h1>
-  <p>Content here...</p>
+  <div class="main">
+    <div class="main_title">
+      <h1>prefers-reduced-motion</h1>
+      <p class="main_title_subheader">an important, but often overlooked, media type</p>  
+    </div>
+    <div class="main_example">
+      <h2>Generic Override Example</h2>
+      <pre>
+@media (prefers-reduced-motion) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}</pre>
+      <p>
+        NOTE: It may be wise to include this at the bottom of your body so that it overrides css which comes before it in the document.
+      </p>
+    </div>
+  </div>
 </body>

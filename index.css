@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  text-align: center;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main pre > * {
+  
+}
+
+.main pre {
+  text-align: left;
+  display: inline-block;
+  margin: 0 auto;
+}

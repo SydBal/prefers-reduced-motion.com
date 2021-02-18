@@ -12,6 +12,27 @@ html.darkmode {
   --background-main-gradient: linear-gradient(315deg, black 0%, black 90%, rgba(60,0,100,1) 100%);
 }
 
+
+/* unvisited link */
+html.darkmode a:link {
+  color: lightskyblue;
+}
+
+/* visited link */
+html.darkmode a:visited {
+  color: palevioletred;
+}
+
+/* mouse over link */
+html.darkmode a:hover {
+  color: rgb(113, 113, 255);
+}
+
+/* selected link */
+html.darkmode a:active {
+  color: rgb(75, 75, 255);
+}
+
 #darkmode-toggle {
   position: absolute;
   top: 10px;
@@ -84,7 +105,7 @@ h2 {
   margin: 0 auto;
 }
 
-.main ul {
+.main ul, .main li {
   text-align: left;
 }
 

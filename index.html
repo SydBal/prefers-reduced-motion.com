@@ -37,8 +37,8 @@
   <div class="main">
     <div class="main_title">
       <h1><code>prefers-reduced-motion</code></h1>
-      <p class="main_title_subheader">an important, but often overlooked, CSS media type</p>
-      <p>Write all CSS rules that should be applied to users requesting <em>reduced motion</em> content in a media query selecting the <code>prefers-reduced-motion</code> media type.</p>
+      <p class="main_title_subheader">an important, but often overlooked, CSS media feature</p>
+      <p>Write all CSS rules that should be applied to users requesting <em>reduced motion</em> content in a media query selecting the <code>prefers-reduced-motion</code> media feature.</p>
     </div>
     <div class="main_example">
       <h2>Generic Animation Override Example</h2>
@@ -64,6 +64,13 @@
         <li>iOS: Settings &gt; General &gt; Accessibility &gt; Reduce Motion.</li>
         <li>Android 9+: Settings &gt; Accessibility &gt; Remove animations.</li>
       </ul>
+      <p>As of Chrome 79, you can also test the <code>prefers-reduced-motion</code> feature in your browser without enabling the <em>reduced motions</em> settings across the entire OS.</p>
+      <ol>
+        <li>Open the Chrome developer tools by inspecting the page, <code>ctrl+shift+i</code>, or otherwise.</li>
+        <li>Click on the 3 vertical dots it the top right, and click "Run command", OR press <code>ctrl+shift+p</code> while the dev tools are open.</li>
+        <li>Run the <code>Show Rendering</code> command. This will open the "Rendering" panel below.</li>
+        <li>Using the "Emulate CSS media feature prefers-reduced-motion" dropdown, select the "prefers-reduced-motion: reduce" option.</li>
+      </ol>
     </div>
     <footer>
       <h2>Sources</h2>
